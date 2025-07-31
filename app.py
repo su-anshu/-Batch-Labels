@@ -100,10 +100,7 @@ def draw_single_label(canvas_obj, product_name, width, height, x_offset=0.0):
     date_x = x_offset + (width - date_text_width) / 2
     canvas_obj.drawString(date_x, date_y, current_date)
     
-    # Draw border around the label with some padding
-    border_padding = 2  # Small padding for border
-    canvas_obj.rect(x_offset + border_padding, border_padding, 
-                   width - (2 * border_padding), height - (2 * border_padding))
+    # Border removed for clean label
 
 def load_google_sheet_data():
     """
